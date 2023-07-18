@@ -13,3 +13,13 @@ stacks:
       template: vpc.yaml
       tags:
         purpose: Base
+    server-dev:
+      template: ec2.yaml
+      parameters:
+        InstanceName: "server-dev"
+        KeyName: AcloudGuru
+        SubnetId:
+          stack_output: vpc-dev/PublicSubnet1
+        VpcId:
+          stack_output: vpc-dev/VPC
+        
