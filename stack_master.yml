@@ -22,4 +22,6 @@ stacks:
           stack_output: vpc-dev/PublicSubnet1
         VpcId:
           stack_output: vpc-dev/VPC
+    inventory-dynamodb-dev:
+      template: dynamodb_inventory.yaml
         
