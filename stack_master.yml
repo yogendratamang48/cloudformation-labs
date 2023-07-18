@@ -1,0 +1,15 @@
+region_aliases:
+  dev: us-east-1
+stack_defaults:
+  tags:
+    application: vpc-dev
+region_defaults:
+  us-east-1:
+    tags:
+      environment: dev
+stacks:
+  dev:
+    vpc-dev:
+      template: vpc.yaml
+      tags:
+        purpose: Base
